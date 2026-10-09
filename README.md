@@ -2,7 +2,11 @@
 
 A clean, presentation-ready countdown timer for corporate training sessions, workshops, breaks, and exercises. It is the successor to [timer2](https://github.com/neiltucker/timer2), redesigned for projectors and large displays.
 
+👉 **[🚀 Launch Live In-Browser Timer](https://neiltucker.github.io/timer3/)** (Runs instantly on any device)
+
 It is a static site: no build step, no dependencies, and no network access needed at run time. It works offline from a USB stick in a training room.
+
+---
 
 ## Features
 
@@ -16,11 +20,11 @@ It is a static site: no build step, no dependencies, and no network access neede
 - **Presets** from 1 minute to 1 hour, plus a custom minutes-and-seconds duration up to 12 hours.
 - **Session title** shown above the timer, e.g. "Coffee break" or "Group exercise 2".
 - **Adjust while running** with **+1 min** and **−1 min**.
-- **"Ends at" clock time**, so the room knows when to be back.
+- **\"Ends at\" clock time**, so the room knows when to be back.
 - **Colour warnings**: amber when the warning threshold is reached (default 2 minutes), red for the last 30 seconds.
 - **At zero**:
   - A gentle three-note chime.
-  - An optional custom message, e.g. "Please return to your seats".
+  - An optional custom message, e.g. \"Please return to your seats\".
   - Optional overtime count (`+00:42`).
 - **Optional soft ticks** during the final 10 seconds.
 - **Presenter friendly**:
@@ -33,8 +37,23 @@ It is a static site: no build step, no dependencies, and no network access neede
 - **Accessible**:
   - Full keyboard control.
   - Screen-reader announcements at milestones.
-  - Respects the system "reduce motion" setting.
+  - Respects the system \"reduce motion\" setting.
 - **Settings are remembered** in the browser, in local storage.
+
+---
+
+## 🎓 Built for Trainers & Instructors
+
+Created to support corporate technical training delivered by:
+* **[Software Tutorial Services](https://www.softwaretutorialservices.com)** — Enterprise instructor-led technical training across Microsoft SQL Server, Azure Cloud, Windows Server, PowerShell, and Python.
+* **[Courseware Studio](https://coursewarestudio.ai)** — AI-powered courseware generation platform producing accredited syllabi, student manuals, slide decks, and SCORM/xAPI packages.
+
+### Related Free Tools for Trainers
+* **[Markdown to SCORM](https://github.com/neiltucker/markdown-to-scorm)** — Compile raw markdown into SCORM 2004 LMS packages in your browser.
+* **[SCORM & LMS Test Harness](https://github.com/neiltucker/scorm-lms-test-harness)** — Test SCORM packages locally without an LMS.
+* **[Courseware Samples](https://github.com/neiltucker/courseware-samples)** — Download sample training manuals and syllabus proposals.
+
+---
 
 ## Keyboard shortcuts
 
@@ -49,6 +68,8 @@ It is a static site: no build step, no dependencies, and no network access neede
 | `M` | Sound on / off |
 | `?` | Settings |
 
+---
+
 ## Run it locally
 
 **Option 1: open the file.** Double-click `index.html`. Everything works directly from disk.
@@ -60,12 +81,14 @@ It is a static site: no build step, no dependencies, and no network access neede
 python -m http.server 8080
 
 # or Node.js
-npx serve .
+nnpx serve .
 ```
 
 Then open <http://localhost:8080> (or the URL `npx serve` prints).
 
 > Browsers block audio until you interact with the page, so the chime is enabled when you first press **Start**. Use **Settings → Test chime** to check the volume in the room.
+
+---
 
 ## URL parameters
 
@@ -77,17 +100,7 @@ Then open <http://localhost:8080> (or the URL `npx serve` prints).
 | `title` | `title=Lunch` | Session title |
 | `accent` | `accent=teal` | `blue`, `teal`, `indigo`, `emerald`, `slate`, `burgundy` |
 
-## Deploy to GitHub Pages
-
-```bash
-git add .
-git commit -m "Initial commit of Timer3"
-git branch -M main
-git remote add origin https://github.com/neiltucker/timer3.git
-git push -u origin main
-```
-
-Then in the repository go to **Settings → Pages → Build and deployment**, choose **Deploy from a branch**, select `main` / `(root)`, and save. The site will be available at `https://neiltucker.github.io/timer3/`.
+---
 
 ## Project structure
 
